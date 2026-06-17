@@ -18,7 +18,6 @@ public class dataBaseConnection {
     public static Connection getConnection() {
 
         try {
-
             return DriverManager.getConnection(URL,USER,PASSWORD);
         } catch (SQLException e) {
             System.out.println("Koneksi gagal : "+ e.getMessage());
