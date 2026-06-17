@@ -3,12 +3,15 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 package model;
+
 import java.time.LocalDateTime;
+
 /**
  *
  * @author Dit
  */
 public class Reservasi {
+
     private int idReservasi;
     private Customer customer;
     private Hewan hewan;
@@ -17,7 +20,8 @@ public class Reservasi {
 
     public Reservasi() {
     }
-    public Reservasi(int idReservasi,Customer customer,Hewan hewan,LocalDateTime tanggal,String status) {
+
+    public Reservasi(int idReservasi, Customer customer, Hewan hewan, LocalDateTime tanggal, String status) {
         this.idReservasi = idReservasi;
         this.customer = customer;
         this.hewan = hewan;
@@ -31,5 +35,13 @@ public class Reservasi {
 
     public Hewan getHewan() {
         return hewan;
+    }
+
+    public String getStatus() {
+        return status;
+    }
+
+    public LocalDateTime getTanggal() {
+        return tanggal;
     }
 }
